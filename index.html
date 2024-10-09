@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendas de Planos de Internet</title>
+    <!-- bootstrap sempre vem primeiro -->
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/componentes.css" />
+  </head>
+  <body>
+    <header class="layout-cabecalho layout-cabecalho--position">
+
+      <div class="container">
+        <nav class="navegacao">
+          <img src="/img/cabecalho.png" alt="Internet" width="75" />
+          <div class="navegacao__menu">
+            <button class="botao--chaveador">
+              <ul class="menu">
+                <li class="menu__item"><a href="#">Como funciona</a></li>
+                <li class="menu__item"><a href="#">Planos e preços</a></li>
+                <li class="menu__item"><a href="#">Contato</a></li>
+                <li class="menu__item"><a href="#" class="botao botao--login">Login</a></li>
+              </ul>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="layout-principal">
+      <div class="container">
+        <div class="principal">
+          <h1 class="principal__titulo">
+            A melhor internet fibra óptica do estado do Rio de Janeiro!
+            <p class="principal__subtitulo">
+              Pacotes que cabem no seu bolso!
+            </p>
+          </h1>
+        </div>
+        <div class="principal__acao">
+          <a href="#planos" class="botao botao--principal">Vejam nossos pacotes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout-depoimento">
+
+      <div class="container">
+        <div class="depoimento">
+          <!-- blockquote serve p citações -->
+           <!-- br não é recomendado para pular linhas -->
+          <blockquote>
+            Gostei muito da internet da empresa, nunca tivemos problemas de queda de conexão.
+            Estamos satisfeitos com a qualidade do serviço.
+          </blockquote>
+          <div class="depoimento__autor">
+            <img src="/img/happy-relaxed-woman-catches-carefree-moment-enjoys-freedom-sings-song-keeps-arms-raised-up-closes-eyes-dances-favorite-music-wears-casual-yellow-t-shirt-isolated-white-wall.jpg" width="300" alt="Mulher feliz">
+          <p>- Maria Eduarda Ribeiro</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div id="planos" class="layout-planos">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4">
+
+            <article class="plano">
+              <h2 class="plano__cabecalho">Básico</h2>
+              <div class="plano__preco">R$89,90</div>
+              <ul class="plano__caracteristicas">
+                <li>Até <strong>10</strong> usuários</li>
+                <li><strong>10 GB</strong> de acesso</li>
+                <li>Instalação grátis</li>
+                <li>Fibra Óptica</li>
+                <li>Sem fidelidade</li>
+              </ul>
+              <footer class="plano__rodape">
+                <a class="botao" href="assine.html">Assine aqui</a>
+              </footer>
+            </article>
+
+          </div>
+
+          <div class="col-md-4">
+
+          <article class="plano plano--mais--vendido">
+            <h2 class="plano__cabecalho">Intermediário</h2>
+            <div class="plano__preco">R$119,90</div>
+            <ul class="plano__caracteristicas">
+              <li>Até <strong>20</strong> usuários</li>
+              <li><strong>30 GB</strong> de acesso</li>
+              <li>Instalação grátis</li>
+              <li>Fibra Óptica</li>
+              <li>Sem fidelidade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a class="botao" href="assine.html">Assine aqui</a>
+            </footer>
+          </article>
+
+        </div>
+
+          <!-- não aplica a margem da direita na ultima caixinha -->
+          <div class="col-md-4">
+
+          <article class="plano" style="margin-right: 0">
+            <h2 class="plano__cabecalho">Premium</h2>
+            <div class="plano__preco">R$199,90</div>
+            <ul class="plano__caracteristicas">
+              <li>Até <strong>50</strong> usuários</li>
+              <li><strong>100 GB</strong> de acesso</li>
+              <li>Instalação grátis</li>
+              <li>Fibra Óptica</li>
+              <li>Sem fidelidade</li>
+            </ul>
+            <footer class="plano__rodape">
+              <a class="botao" href="assine.html">Assine aqui</a>
+            </footer>
+          </article>
+
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="layout-rodape">
+
+      <div class="container">
+        <!-- copyright -->
+        <p>&copy; Infotec serviços de tecnologia e internet ltda.</p>
+      </div>
+
+    </footer>
+
+  </body>
+</html>

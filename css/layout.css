@@ -1,0 +1,42 @@
+.layout-cabecalho{
+    line-height: 60px;
+    height: 80px;
+    border-bottom: 1px solid #2843df;
+}
+
+.layout-cabecalho--position{
+   background-color: #e7e7e7;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 999;
+}
+
+.layout-planos{
+    padding: 80px 0;
+}
+
+@media(max-width:768px){
+    /* aplicar o espaçamento da margem em todas as caixas exceto a ultima */
+    .layout-planos .row > div:not(:last-child){
+        margin-bottom: 40px;
+    }
+}
+
+.layout-principal{
+    padding: 80px 0;
+    /* background-color: #528ad3; */
+}
+
+.layout-depoimento{
+    padding: 80px;
+    background-color: #e7e7e7;
+}
+
+.layout-rodape{
+    padding: 30px;
+    background-color: #2843df;
+    color: #e7e7e7;
+    text-align: center;
+}

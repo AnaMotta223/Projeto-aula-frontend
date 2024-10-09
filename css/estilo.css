@@ -1,0 +1,108 @@
+/*  asterisco representa toda a estrutura do htmk */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 80px;
+    border: 1px solid #2843df;
+    background-color: #77aef7;
+}
+/* 
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margem 0 em cima e em baixo e automatica na direita e esquerda
+    margin: 0 auto;
+
+} */
+
+/* adaptar as caixinhas na vertical quando for para o celular */
+article {
+    padding: 10px;
+    border: 1px solid #2843df;
+    border-radius: 10px;
+    margin-bottom: 5%;
+  }
+  
+/* @media (min-width: 800px) {
+    article {
+      width: 30%;
+    float ajusta a caixa p/ a esquerda
+      float: left;
+      margin-right: 5%;
+    }
+  } 
+*/
+
+article > h2{
+    background-color: #528ad3;
+    color: white;
+    text-align: center;
+    /* line aumenta a altura */
+    line-height: 2.5; 
+    margin: -10px;
+    margin-bottom: 0;
+    font-size: 28px;
+    border-radius: 10px 10px 0 0;
+}
+
+article > div{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+article > ul{
+    /* elimina os pontinhos da lista */
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    line-height: 160%;
+}
+
+article > ul > li{
+    text-align: center;
+}
+
+article > footer{
+    text-align: center;
+}
+
+#planos{
+    padding: 80px 0;
+}
+
+#planos::after{
+    content: '';
+    clear: both;
+}
+
+.botao{
+    display: inline-block;
+    padding: 10px;
+    background-color: #528ad3;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+    
+}
+
+.botao:hover{
+    background-color: #155cb9;
+}
+
+.botao:focus{
+    background-color: #155cb9;
+}

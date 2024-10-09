@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados GitHub</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consumindo dados do GitHub</h1>
+        <!-- ao clicar, chama a funcao que pega os dados -->
+        <button class="btn btn-primary" onclick="dadosGitHub()">Consultar</button>
+        <div id="resposta">
+            <p>Dados do Usuário:</p>
+        </div>
+    </div>
+    <script>
+        function dadosGitHub(){
+            let url = "https://api.github.com/users/AnaMotta223";
+            //faz uma promise (promessa) requisitando o dado 
+            fetch(url)
+            //quando tem um resultado positivo pega os dados do json
+            .then((resolve) => resolve.json())
+            //funcao criada para exibir os dados
+            .then((data) => mostrarDados(data))
+            //catch em caso de erro
+            .catch((reject) => console.log("Erro na requisição")); 
+        }
+
+        function mostrarDados(data){
+            //insere o resultado na div resposta (coloca um p com o login
+            //e uma img do usuario)
+            let resposta = document.getElementById('resposta');
+            resposta.innerHTML = `<p>Login: ${data.login} </p> 
+                                    <img src=${data.avatar_url}>
+            `; 
+        }
+    </script>
+</body>
+</html>

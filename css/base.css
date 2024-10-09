@@ -1,0 +1,12 @@
+/*  asterisco representa toda a estrutura do htmk */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* pega o tamanho de fonte do browser */
+    font-size: 100%;
+}
+
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}

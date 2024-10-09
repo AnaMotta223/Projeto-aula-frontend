@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-size: 20px;
+        }
+
+        .texto{
+         /* em é relativo ao elemento pai (no caso era o navegador - 16px*2 = 32px) */
+            /* font-size: 2em */
+            /* rem ignora a tag pai, pega o tamanho padrão do navegador */
+            font-size: 2rem;
+
+            /* interessante usar primeiro o rem e ir herdando com o em */
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1>HTML E CSS</h1>
+    <p class="texto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+      officiis tempora minus omnis recusandae nulla voluptate cum consequuntur,
+      illum eum nam tenetur, quibusdam quidem atque laborum id voluptatibus
+      eligendi hic!
+    </p>
+  </body>
+</html>

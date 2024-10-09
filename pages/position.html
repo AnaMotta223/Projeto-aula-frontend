@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        main{
+            position: relative;
+            background-color: #e5e5e5;
+            margin: 1.5rem 1rem;
+            padding: 1rem 2.5rem;
+        }
+        div{
+            font-size: 1.25rem;
+            padding: 1rem 1.5rem;
+        }
+
+        .static{
+            background-color: cadetblue;
+        }
+        .relative{
+            /* é possível usar propriedades de direcionamento (left, top, bottom) 
+            área original fica inalterada        */
+            position: relative;
+            top: -30px;
+            width: 50%;
+            margin: 0 auto;
+            background-color: plum;
+            z-index: 100;
+        }
+        .absolute{
+            position: absolute;
+            background-color: aquamarine;
+            /* vai pra cima pois sua posição de referencia é o html */
+            top: 0;
+            right: 0;
+        }
+        .fixed{
+            position: fixed;
+            right: 64px;
+            bottom: 64px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Menu Principal</h1>
+        <div class="static">
+            <p>Elemento Estático</p>
+        </div>
+        <div class="relative">
+            <p>Elemento Relativo</p>
+        </div>
+        <div class="absolute">
+            <p>Elemento Absoluto</p>
+        </div>
+        <div class="fixed">
+            <p>Elemento Fixo</p>
+        </div>
+    </main>
+    
+</body>
+</html>
